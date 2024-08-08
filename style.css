@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffb200;
+}
+
+.card {
+  background-color: whitesmoke;
+  height: 50vh;
+  width: 19vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+  border-radius: 12px;
+  box-shadow: 12px 12px 2px 1px black;
+  gap: 1rem;
+}
+
+.card-body {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 18px;
+  gap: 0.5rem;
+}
+
+.image {
+  height: 40%;
+  width: 86%;
+  background-image: url("./assets/images/illustration-article.svg");
+  background-size: cover;
+  margin-top: 12px;
+  border-radius: 6px;
+}
+
+.Learning {
+  height: 2em;
+  width: 6em;
+  padding-top: 2px;
+  background-color: #ffb200;
+  padding-left: 6px;
+  font-size: 8px;
+}
+
+.Publish {
+  font-size: 10px;
+}
+
+.heading {
+  padding-top: 8px;
+}
+
+.heading:hover {
+  color: #bc8c1df5;
+  cursor: pointer;
+}
+
+.paragraph {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.avtar {
+  display: flex;
+  margin-top: 6px;
+}
+
+p {
+  font-size: 8px;
+  margin-left: 6px;
+  padding-top: 6px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .card {
+    width: 30vw;
+    height: 50vh;
+  }
+  .image {
+    width: 90%;
+  }
+  .card-body {
+    padding-left: 15px;
+  }
+  .paragraph {
+    font-size: 10px;
+  }
+  .Publish,
+  .Learning,
+  p {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 35vw;
+    height: 45vh;
+  }
+  .image {
+    width: 85%;
+  }
+  .card-body {
+    padding-left: 12px;
+  }
+  .paragraph {
+    font-size: 9px;
+  }
+  .Publish,
+  .Learning,
+  p {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    width: 50vw;
+    height: 50vh;
+  }
+  .image {
+    width: 90%;
+  }
+  .card-body {
+    padding-left: 8px;
+  }
+  .paragraph {
+    font-size: 8px;
+  }
+  .Publish,
+  .Learning,
+  p {
+    font-size: 7px;
+  }
+}
